@@ -5,6 +5,7 @@
 #Imports the Card object
 from card import Card
 from fisher_yates import Fisher_Yates
+from merge_sort import Merge_Sort
 
 """
 Demonstrates the use of the Card object
@@ -34,6 +35,8 @@ print("Array shuffled.")
 
 for i in range(0, len(cards)) :
     print(cards[i].get_value(), " - ", cards[i].get_suit(), sep="") #The value and suit of each card is printed to show that the cards were shuffled
+
+Merge_Sort.merge_sort()
 
 
 
