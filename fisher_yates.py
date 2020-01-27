@@ -1,6 +1,6 @@
 import random 
   
-def randomize(list, n) : 
+def shuffle(list, n) : 
     for i in range(n - 1, 0, -1): 
         j = random.randint(0, i + 1) 
   

@@ -1,5 +1,5 @@
 #Imports the Card object
-from card import Card
+from card import Card, from fisher_yates import 
 
 """
 Demonstrates the use of the Card object
