@@ -1,5 +1,6 @@
 #Imports the Card object
-from card import Card, from fisher_yates import 
+from card import Card
+from fisher_yates import Fisher_Yates
 
 """
 Demonstrates the use of the Card object
@@ -23,4 +24,11 @@ print("Array created.")
 
 for i in range(0, len(cards)) :
     print("i: ", i, " ", cards[i].get_value(), " - ", cards[i].get_suit(), sep="")
+
+Fisher_Yates.shuffle(cards, len(cards))
+print("Array shuffled.")
+
+for i in range(0, len(cards)) :
+    print(cards[i].get_value(), " - ", cards[i].get_suit(), sep="") #The value and suit of each card is printed to show that the cards were shuffled.
+
 
