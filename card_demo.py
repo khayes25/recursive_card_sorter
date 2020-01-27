@@ -1,5 +1,5 @@
 #Imports the Card object
-import Card from card
+from card import Card
 
 """
 Demonstrates the use of the Card object
@@ -20,4 +20,7 @@ for j in range(0, len(values)) : #Iterates through each value
         cards.insert(index, Card(values[j], suits[k], j, k)) #Creates a Card object at the current index with the current value and suit
         index += 1 #Increments to the next index
 print("Array created.")
+
+for i in range(0, len(cards)) :
+    print("i: ", i, " ", cards[i].get_value(), " - ", cards[i].get_suit(), sep="")
 
