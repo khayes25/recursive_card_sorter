@@ -36,7 +36,11 @@ print("Array shuffled.")
 for i in range(0, len(cards)) :
     print(cards[i].get_value(), " - ", cards[i].get_suit(), sep="") #The value and suit of each card is printed to show that the cards were shuffled
 
-Merge_Sort.merge_sort()
+Merge_Sort.sort(cards)
+
+for i in range(0, len(cards)) :
+    print("i: ", i, " ", cards[i].get_value, " - ", cards[i].get_suit, sep="")
+
 
 
 

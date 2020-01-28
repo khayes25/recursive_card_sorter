@@ -4,6 +4,7 @@ Merge Sort Algorithm
 
 #Class Header
 class Merge_Sort :
+    
     def merge_sort(list, left, right) :
         if(left < right) :
             middle = (left + right) / 2
@@ -12,6 +13,9 @@ class Merge_Sort :
             merge_sort(list, middle + 1, right)
 
             merge(list, left, middle, right)
+
+    def sort(list) :
+        merge_sort(list, 0, len(list) - 1)
 
     """
     Merges two partitions of an array together, in the correct order.
